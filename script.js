@@ -19,7 +19,6 @@ const portfolioData = {
       "Microservices",
       "RabbitMQ",
       "Spring Boot",
-      "Spring Data JPA",
       "Node.js",
       "Express",
       "RESTful APIs",
