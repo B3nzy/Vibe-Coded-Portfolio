@@ -1,0 +1,164 @@
+{
+  "personal_info": {
+    "name": "Sumit Mandal",
+    "title": "Software Engineer",
+    "location": "Pune, Maharashtra, India",
+    "email": "sumit.mandal0123@gmail.com",
+    "phone": "+91 9647643906",
+    "github": "https://github.com/B3nzy",
+    "linkedin": "https://www.linkedin.com/in/sumit-mandal-807344238/",
+    "leetcode": "https://leetcode.com/user9952pw/",
+    "hackerrank": "https://www.hackerrank.com/Benzy"
+  },
+  "summary": "Software Engineer with 3 years of experience engineering scalable backend ecosystems, full-stack applications and intelligent AI integrations. Expert in building event-driven microservices (.NET Core, Node.js) and managing distributed data layers across SQL and NoSQL environments. Adept at handling live production monitoring, cross-border team collaboration, and cloud-native containerization with Docker.",
+  "skills": {
+    "programming_languages": ["C#", "JavaScript", "Java"],
+    "backend_development": [
+      ".NET Core",
+      "Microservices",
+      "RabbitMQ",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Node.js",
+      "Express",
+      "RESTful APIs"
+    ],
+    "frontend_development": [
+      "Next.js",
+      "React",
+      "Redux Toolkit",
+      "Tailwind CSS"
+    ],
+    "databases": [
+      "MS SQL",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Qdrant Vector Database"
+    ],
+    "ai_and_modern_tooling": [
+      "Microsoft Semantic Kernel",
+      "LLM Integration (LM Studio)",
+      "Prompt Engineering",
+      "Cursor",
+      "Claude"
+    ],
+    "authentication_and_security": [
+      "Spring Security",
+      "JWT",
+      "OAuth (Google)",
+      "Password hashing and encryption",
+      "Rate limiter"
+    ],
+    "cloud_and_devops": ["Azure", "AWS", "Docker", "Docker Compose", "Git"]
+  },
+  "work_experience": [
+    {
+      "company": "Xplor Technologies",
+      "role": "Software Engineer I",
+      "location": "Pune, India",
+      "duration": "Apr 2024 - Present",
+      "tech_stack": [".NET Core", "MS SQL", "RabbitMQ", "Azure", "Coralogix"],
+      "highlights": [
+        "Co-own the development and maintenance of event-driven backend microservices for XplorPay, a critical US-based payment system processing billions of dollars in transactions regularly.",
+        "Led the technical implementation for the biannual Card Association Updates (Visa, MasterCard, Discover, Amex), designing complex feature changes that secured 100% compliance across two consecutive release cycles.",
+        "Serve on the active on-call rotation, monitoring live production data, troubleshooting high-priority runtime bugs, and ensuring platform reliability and data integrity.",
+        "Partner and communicate daily with US-based product and engineering teams to align on feature requirements, bug fixes, and system architecture updates."
+      ]
+    },
+    {
+      "company": "Dey Technologies (TaxEve)",
+      "role": "Backend Developer",
+      "location": "Kolkata, India",
+      "duration": "May 2023 - Aug 2023",
+      "tech_stack": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Stripe",
+        "AWS"
+      ],
+      "highlights": [
+        "Sole backend developer for TaxEve, independently designing and implementing the entire backend for an e-filing platform supporting 1099 forms.",
+        "Delivered the complete MVP within four months, handling authentication, payments (Stripe), business logic, and secure API development.",
+        "Managed system integrations and AWS deployment, focusing heavily on backend performance, robustness, and security."
+      ]
+    },
+    {
+      "company": "Gamut Infosystems Ltd. (Farvision)",
+      "role": "Software Developer Trainee",
+      "location": "Kolkata, India",
+      "duration": "Jan 2023 - Mar 2023",
+      "tech_stack": [".NET", "C#", "MS SQL"],
+      "highlights": [
+        "Enhanced backend functionality for the Farvision 4.5 ERP, developing and maintaining server-side components for real estate application workflows.",
+        "Supported database management, API integration, and backend business logic using .NET, C#, and MS SQL."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "eCommerceSolution",
+      "subtitle": "Distributed Microservices System",
+      "duration": "Feb 2026 - Present",
+      "stack": [
+        ".NET Core",
+        "RabbitMQ (Mass Transit)",
+        "Microsoft Semantic Kernel",
+        "LM Studio",
+        "Qdrant",
+        "PostgreSQL",
+        "MS SQL Server",
+        "MongoDB",
+        "Redis",
+        "Docker",
+        "Ocelot"
+      ],
+      "highlights": [
+        "Engineered a decoupled microservices ecosystem (User, Product, Order, Inventory) from scratch using .NET Core and Ocelot, with RabbitMQ (Mass Transit) for asynchronous messaging.",
+        "Engineered a natural language product search integrating Qdrant Vector Database and local LLMs (via Semantic Kernel); implemented a two-step hybrid search combining exact MS SQL pre-filtering with vector semantic matching.",
+        "Built an email microservice using Microsoft Semantic Kernel and a local LLM (via LM Studio) to write personalized order confirmations using native Kernel Functions to dynamically query real-time product data.",
+        "Deployed a multi-database system utilizing PostgreSQL for identity, MS SQL Server for transactional catalogs, and MongoDB for orders; integrated Redis distributed cache to offload high-frequency reads.",
+        "Containerized the system using Docker Compose, establishing isolated virtual networks to shield databases from the public internet while preserving secure inter-service API communication."
+      ]
+    },
+    {
+      "title": "WeaveWhisper",
+      "subtitle": "Multi-Vendor E-Commerce Marketplace",
+      "duration": "Nov 2023 - Mar 2024",
+      "stack": [
+        "React",
+        "Redux Toolkit",
+        "Java (Spring Boot)",
+        "MySQL",
+        "AWS (S3)",
+        "Razorpay",
+        "Tailwind CSS"
+      ],
+      "highlights": [
+        "Developed a responsive multi-vendor e-commerce platform bridging independent clothing brands with customers using React and Java Spring Boot.",
+        "Implemented secure, custom authentication pipelines via Spring Security & JWT to decouple workflows for Customer accounts and Brand admin dashboards.",
+        "Integrated AWS S3 for multipart high-res media uploads and engineered secure transactional checkouts via Razorpay API webhooks.",
+        "Built dynamic, multi-attribute product filtering (brand, size, price) using Redux Toolkit for efficient client-side state synchronization."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Post Graduate Diploma in Advanced Computing (PG-DAC)",
+      "institution": "Institute for Advanced Computing & Software Development",
+      "location": "Pune, India",
+      "duration": "Sep 2023 - Mar 2024",
+      "score": "87.5%"
+    },
+    {
+      "degree": "Bachelor of Technology",
+      "institution": "Govt. College Of Engineering & Ceramic Technology",
+      "location": "Kolkata, India",
+      "duration": "Aug 2019 - May 2023",
+      "score": "CGPA: 9.73"
+    }
+  ]
+}

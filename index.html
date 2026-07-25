@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumit Mandal | Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Sumit Mandal, Software Engineer specializing in backend microservices and AI integrations."
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: {
+                primary: "#3b82f6", // blue-500
+                secondary: "#10b981", // emerald-500
+                glow: "rgba(59, 130, 246, 0.5)",
+              },
+              dark: {
+                base: "#09090b", // zinc-950
+                card: "#18181b", // zinc-900
+                border: "#27272a", // zinc-800
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-dark-base text-zinc-300 font-sans selection:bg-accent-primary/30 selection:text-white"
+  >
+    <!-- Background Glow Effects -->
+    <div
+      class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none"
+    >
+      <div
+        class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-accent-primary/10 rounded-full blur-[120px]"
+      ></div>
+      <div
+        class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-accent-secondary/10 rounded-full blur-[120px]"
+      ></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full z-50 border-b border-white/5 bg-dark-base/80 backdrop-blur-md"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a
+          href="#"
+          class="text-2xl font-bold bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent"
+          >SM.</a
+        >
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#about" class="hover:text-accent-primary transition-colors"
+            >About</a
+          >
+          <a
+            href="#experience"
+            class="hover:text-accent-primary transition-colors"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="hover:text-accent-primary transition-colors"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="px-5 py-2 rounded-full bg-white text-dark-base font-medium hover:bg-accent-primary hover:text-white transition-all duration-300"
+            >Hire Me</a
+          >
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button id="mobile-menu-toggle" class="md:hidden text-2xl">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 z-[60] bg-dark-base translate-x-full transition-transform duration-300 md:hidden"
+    >
+      <div class="flex flex-col h-full p-8">
+        <div class="flex justify-between items-center mb-12">
+          <span class="text-2xl font-bold">SM.</span>
+          <button id="mobile-menu-close" class="text-2xl">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="flex flex-col space-y-8 text-3xl font-semibold">
+          <a href="#about" class="mobile-link">About</a>
+          <a href="#experience" class="mobile-link">Experience</a>
+          <a href="#projects" class="mobile-link">Projects</a>
+          <a href="#contact" class="mobile-link text-accent-primary">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="min-h-screen flex items-center pt-20 px-6">
+        <div
+          class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center"
+        >
+          <div class="reveal">
+            <div
+              class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-accent-primary/10 border border-accent-primary/20 text-accent-primary text-sm font-medium mb-6"
+            >
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-primary opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-accent-primary"
+                ></span>
+              </span>
+              <span>Available for new opportunities</span>
+            </div>
+            <h1
+              class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight"
+            >
+              Sumit <span class="text-zinc-500">Mandal</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-medium text-zinc-400 mb-8">
+              Software Engineer specializing in
+              <span class="text-white">Backend Microservices</span> &
+              <span class="text-white">AI Integrations</span>.
+            </p>
+            <p class="text-zinc-500 max-w-lg mb-10 leading-relaxed">
+              Engineering scalable backend ecosystems and intelligent AI
+              solutions with 3+ years of experience in .NET Core, Node.js, and
+              Cloud-native architectures.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#projects"
+                class="px-8 py-4 rounded-xl bg-accent-primary text-white font-bold hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all transform hover:-translate-y-1"
+                >View Projects</a
+              >
+              <a
+                href="#contact"
+                class="px-8 py-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-white/10 transition-all"
+                >Contact Me</a
+              >
+            </div>
+            <div
+              class="mt-12 flex items-center space-x-6 text-2xl text-zinc-500"
+            >
+              <a
+                href="https://github.com/B3nzy"
+                target="_blank"
+                class="hover:text-white transition-colors"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sumit-mandal-807344238/"
+                target="_blank"
+                class="hover:text-white transition-colors"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://leetcode.com/user9952pw/"
+                target="_blank"
+                class="hover:text-white transition-colors"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+              <a
+                href="https://www.hackerrank.com/Benzy"
+                target="_blank"
+                class="hover:text-white transition-colors"
+                ><i class="fa-brands fa-hackerrank"></i
+              ></a>
+            </div>
+          </div>
+          <div class="hidden md:block relative reveal delay-200">
+            <div
+              class="aspect-square rounded-3xl bg-gradient-to-br from-accent-primary/20 to-accent-secondary/20 border border-white/10 flex items-center justify-center p-12 overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"
+              ></div>
+              <i
+                class="fa-solid fa-microchip text-[12rem] text-white/10 rotate-12"
+              ></i>
+              <!-- Floating Glass Cards -->
+              <div
+                class="absolute top-10 right-10 p-4 glass rounded-2xl border border-white/10 animate-bounce-slow"
+              >
+                <i class="fa-solid fa-server text-accent-primary mr-2"></i> .NET
+                Core
+              </div>
+              <div
+                class="absolute bottom-10 left-10 p-4 glass rounded-2xl border border-white/10 animate-bounce-slow"
+                style="animation-delay: 1s"
+              >
+                <i class="fa-solid fa-brain text-accent-secondary mr-2"></i> LLM
+                Dev
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About & Skills Section -->
+      <section id="about" class="py-24 px-6 bg-dark-card/50">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid md:grid-cols-3 gap-16">
+            <div class="md:col-span-1 reveal">
+              <h2 class="text-3xl font-bold text-white mb-6">About Me</h2>
+              <p class="text-zinc-400 leading-relaxed mb-6" id="summary-text">
+                <!-- Populated via JS -->
+              </p>
+            </div>
+            <div class="md:col-span-2 reveal delay-200">
+              <h2 class="text-3xl font-bold text-white mb-10">
+                Technical Arsenal
+              </h2>
+              <div class="grid sm:grid-cols-2 gap-8" id="skills-container">
+                <!-- Populated via JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16 reveal">
+            <h2 class="text-4xl font-bold text-white mb-4">
+              Professional Journey
+            </h2>
+            <div
+              class="h-1.5 w-20 bg-accent-primary mx-auto rounded-full"
+            ></div>
+          </div>
+
+          <div
+            class="relative space-y-12 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-zinc-800 before:to-transparent"
+            id="experience-timeline"
+          >
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-24 px-6 bg-dark-card/30">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 reveal"
+          >
+            <div>
+              <h2 class="text-4xl font-bold text-white mb-4">Featured Work</h2>
+              <p class="text-zinc-500">
+                A selection of my recent engineering projects.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-10" id="projects-grid">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-3xl font-bold text-white mb-12 text-center reveal">
+            Education
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8" id="education-container">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-24 px-6">
+        <div class="max-w-3xl mx-auto">
+          <div
+            class="glass p-10 md:p-16 rounded-[2.5rem] border border-white/10 text-center reveal"
+          >
+            <h2 class="text-4xl font-bold text-white mb-6">
+              Let's build something epic.
+            </h2>
+            <p class="text-zinc-400 mb-12">
+              I'm currently looking for new roles where I can contribute to
+              high-impact backend systems and AI-driven applications.
+            </p>
+
+            <div class="flex flex-col space-y-6">
+              <a
+                href="mailto:sumit.mandal0123@gmail.com"
+                class="flex items-center justify-center space-x-4 p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all group"
+              >
+                <div
+                  class="w-12 h-12 rounded-full bg-accent-primary/20 flex items-center justify-center text-accent-primary group-hover:scale-110 transition-transform"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <span class="text-xl font-medium text-white" id="email-display"
+                  >sumit.mandal0123@gmail.com</span
+                >
+                <button
+                  onclick="copyEmail()"
+                  class="ml-auto text-zinc-500 hover:text-white"
+                >
+                  <i class="fa-solid fa-copy"></i>
+                </button>
+              </a>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div
+                  class="flex items-center space-x-4 p-6 bg-white/5 rounded-2xl border border-white/5"
+                >
+                  <i class="fa-solid fa-location-dot text-zinc-500 text-xl"></i>
+                  <span class="text-zinc-300">Pune, Maharashtra, India</span>
+                </div>
+                <div
+                  class="flex items-center space-x-4 p-6 bg-white/5 rounded-2xl border border-white/5"
+                >
+                  <i class="fa-solid fa-phone text-zinc-500 text-xl"></i>
+                  <span class="text-zinc-300">+91 9647643906</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 px-6">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:row items-center justify-between gap-6"
+      >
+        <p class="text-zinc-500 text-sm">
+          © 2026 Sumit Mandal. Engineered with passion.
+        </p>
+        <div class="flex items-center space-x-6 text-zinc-500">
+          <a
+            href="https://github.com/B3nzy"
+            target="_blank"
+            class="hover:text-white transition-colors"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/sumit-mandal-807344238/"
+            target="_blank"
+            class="hover:text-white transition-colors"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Notification for Clipboard -->
+    <div
+      id="toast"
+      class="fixed bottom-10 left-1/2 -translate-x-1/2 px-6 py-3 bg-accent-primary text-white rounded-full font-medium opacity-0 transition-opacity pointer-events-none z-[100]"
+    >
+      Copied to clipboard!
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

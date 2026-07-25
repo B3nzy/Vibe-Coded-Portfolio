@@ -1,0 +1,140 @@
+/* Custom CSS for Sumit Mandal Portfolio */
+
+:root {
+  --accent-primary: #3b82f6;
+  --accent-secondary: #10b981;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Reveal on Scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+}
+.delay-200 {
+  transition-delay: 200ms;
+}
+.delay-300 {
+  transition-delay: 300ms;
+}
+.delay-400 {
+  transition-delay: 400ms;
+}
+
+/* Custom Animations */
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 4s ease-in-out infinite;
+}
+
+/* Hover Effects */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Mobile Link Styles */
+.mobile-link {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.mobile-link:hover {
+  transform: translateX(10px);
+  color: white;
+}
+
+/* Timeline Custom Styles */
+.timeline-dot {
+  position: relative;
+}
+
+.timeline-dot::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  left: -6px;
+  top: 4px;
+  box-shadow: 0 0 15px var(--accent-primary);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Tag Styles */
+.tag {
+  @apply px-3 py-1 rounded-full text-xs font-medium border transition-colors duration-300;
+}
+
+.tag-blue {
+  @apply bg-blue-500/10 text-blue-400 border-blue-500/20;
+}
+.tag-emerald {
+  @apply bg-emerald-500/10 text-emerald-400 border-emerald-500/20;
+}
+.tag-zinc {
+  @apply bg-white/5 text-zinc-400 border-white/10;
+}
+
+/* Responsive adjustments for Timeline */
+@media (min-width: 768px) {
+  .timeline-dot::before {
+    left: 50%;
+    margin-left: -6px;
+  }
+}
