@@ -44,18 +44,46 @@ body {
 }
 
 /* Custom Animations */
-@keyframes bounce-slow {
+@keyframes float {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
 }
 
-.animate-bounce-slow {
-  animation: bounce-slow 4s ease-in-out infinite;
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float-delayed {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float-delayed {
+  animation: float-delayed 6s ease-in-out 1s infinite;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out 2s infinite;
 }
 
 /* Hover Effects */
@@ -118,17 +146,33 @@ body {
 
 /* Tag Styles */
 .tag {
-  @apply px-3 py-1 rounded-full text-xs font-medium border transition-colors duration-300;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-width: 1px;
+  transition:
+    color 300ms,
+    border-color 300ms,
+    background-color 300ms;
 }
 
 .tag-blue {
-  @apply bg-blue-500/10 text-blue-400 border-blue-500/20;
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #60a5fa;
+  border-color: rgba(59, 130, 246, 0.2);
 }
+
 .tag-emerald {
-  @apply bg-emerald-500/10 text-emerald-400 border-emerald-500/20;
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.2);
 }
+
 .tag-zinc {
-  @apply bg-white/5 text-zinc-400 border-white/10;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #a1a1aa;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive adjustments for Timeline */

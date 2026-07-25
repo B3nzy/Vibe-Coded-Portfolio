@@ -201,28 +201,113 @@
             </div>
           </div>
           <div class="hidden md:block relative reveal delay-200">
-            <div
-              class="aspect-square rounded-3xl bg-gradient-to-br from-accent-primary/20 to-accent-secondary/20 border border-white/10 flex items-center justify-center p-12 overflow-hidden"
-            >
+            <div class="relative w-full max-w-lg mx-auto">
+              <!-- Ambient Glow behind terminal -->
               <div
-                class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"
+                class="absolute -inset-1 bg-gradient-to-r from-accent-primary/30 to-accent-secondary/30 rounded-3xl blur-2xl opacity-50"
               ></div>
-              <i
-                class="fa-solid fa-microchip text-[12rem] text-white/10 rotate-12"
-              ></i>
-              <!-- Floating Glass Cards -->
+
+              <!-- Code Terminal Glass Card -->
               <div
-                class="absolute top-10 right-10 p-4 glass rounded-2xl border border-white/10 animate-bounce-slow"
+                class="relative glass rounded-3xl border border-white/10 overflow-hidden shadow-2xl"
               >
-                <i class="fa-solid fa-server text-accent-primary mr-2"></i> .NET
-                Core
-              </div>
-              <div
-                class="absolute bottom-10 left-10 p-4 glass rounded-2xl border border-white/10 animate-bounce-slow"
-                style="animation-delay: 1s"
-              >
-                <i class="fa-solid fa-brain text-accent-secondary mr-2"></i> LLM
-                Dev
+                <!-- Window Header -->
+                <div
+                  class="px-5 py-3 bg-white/5 border-b border-white/10 flex items-center justify-between"
+                >
+                  <div class="flex items-center space-x-2">
+                    <span
+                      class="w-3 h-3 rounded-full bg-red-500/80 inline-block"
+                    ></span>
+                    <span
+                      class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"
+                    ></span>
+                    <span
+                      class="w-3 h-3 rounded-full bg-green-500/80 inline-block"
+                    ></span>
+                  </div>
+                  <span class="text-xs font-mono text-zinc-500"
+                    >engineer.cs — .NET & AI Ecosystem</span
+                  >
+                  <i class="fa-solid fa-code-branch text-xs text-zinc-600"></i>
+                </div>
+
+                <!-- Window Content -->
+                <div class="p-6 font-mono text-xs leading-relaxed space-y-3">
+                  <div class="flex items-center text-zinc-500">
+                    <span class="text-accent-primary mr-2">using</span>
+                    System.Microservices;
+                  </div>
+                  <div class="flex items-center text-zinc-500">
+                    <span class="text-accent-primary mr-2">using</span>
+                    Microsoft.SemanticKernel;
+                  </div>
+                  <div class="pt-2 text-zinc-300">
+                    <span class="text-blue-400">public class</span>
+                    <span class="text-emerald-400 font-semibold"
+                      >BackendEngineer</span
+                    >
+                  </div>
+                  <div class="pl-4 text-zinc-400">
+                    <span class="text-blue-400">public string[]</span> TechStack
+                    => <span class="text-zinc-300">[</span>
+                  </div>
+                  <div class="pl-8 text-amber-300">
+                    ".NET Core", "Microservices", "RabbitMQ", "Semantic Kernel",
+                    "Qdrant Vector DB", "PostgreSQL", "Docker", "Azure"
+                  </div>
+                  <div class="pl-4 text-zinc-300">];</div>
+                  <div class="pt-2 pl-4 text-zinc-500">
+                    // Event-Driven & AI Integration Architecture
+                  </div>
+                  <div class="pl-4">
+                    <span class="text-purple-400">await</span> engine.<span
+                      class="text-blue-400"
+                      >ExecuteAsync</span
+                    >(<span class="text-emerald-300"
+                      >"High scale microservices"</span
+                    >);
+                  </div>
+                </div>
+
+                <!-- Floating Skill Badges Overlay -->
+                <div
+                  class="p-4 bg-white/[0.02] border-t border-white/10 flex flex-wrap gap-2"
+                >
+                  <span
+                    class="px-3 py-1 rounded-lg bg-accent-primary/10 border border-accent-primary/30 text-accent-primary text-xs font-medium flex items-center gap-1.5 animate-float"
+                  >
+                    <i class="fa-solid fa-server text-[10px]"></i> .NET Core
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-medium flex items-center gap-1.5 animate-float-delayed"
+                  >
+                    <i class="fa-solid fa-cubes text-[10px]"></i> Microservices
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-lg bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-medium flex items-center gap-1.5 animate-float-slow"
+                  >
+                    <i class="fa-solid fa-brain text-[10px]"></i> Semantic
+                    Kernel
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-lg bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-medium flex items-center gap-1.5 animate-float"
+                  >
+                    <i class="fa-solid fa-envelope text-[10px]"></i> RabbitMQ
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-lg bg-teal-500/10 border border-teal-500/30 text-teal-300 text-xs font-medium flex items-center gap-1.5 animate-float-delayed"
+                  >
+                    <i class="fa-solid fa-database text-[10px]"></i> Qdrant
+                    Vector DB
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-lg bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs font-medium flex items-center gap-1.5 animate-float-slow"
+                  >
+                    <i class="fa-brands fa-docker text-[10px]"></i> Docker &
+                    Azure
+                  </span>
+                </div>
               </div>
             </div>
           </div>
