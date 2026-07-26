@@ -68,11 +68,42 @@
       <div
         class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
       >
-        <a
-          href="#"
-          class="text-2xl font-bold bg-gradient-to-r from-white to-zinc-500 bg-clip-text text-transparent"
-          >SM.</a
-        >
+        <div class="flex items-center space-x-4">
+          <!-- Circular SM Logo -->
+          <a href="#" class="relative group">
+            <span
+              class="w-12 h-12 rounded-full bg-gradient-to-br from-accent-primary to-emerald-500 flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300"
+              >SM</span
+            >
+          </a>
+
+          <!-- Full Name and Designation -->
+          <div class="hidden md:flex flex-col">
+            <a
+              href="#"
+              class="text-white font-bold text-lg group-hover:text-accent-primary transition-colors"
+              >Sumit Mandal</a
+            >
+            <div class="flex items-center space-x-1 mt-1">
+              <!-- Green Blinking Dot -->
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"
+                ></span>
+              </span>
+
+              <!-- Designation -->
+              <a
+                href="#"
+                class="text-zinc-400 text-xs group-hover:text-white transition-colors font-medium"
+                >Software Engineer</a
+              >
+            </div>
+          </div>
+        </div>
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8">
